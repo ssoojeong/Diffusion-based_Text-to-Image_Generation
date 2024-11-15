@@ -86,7 +86,7 @@ python ./metric/psnr_ssim.py --model {모델명} --gpus 0
 
 ### 📄 논문 투고 및 게재 (2023 하계 전자공학회)
 A study of text guided image generation based on diffusion model 
-[[paper]](./A_study_of_text_guided_image_generation_based_on_diffusion_modelpdf) 
+[[paper]](./A_study_of_text_guided_image_generation_based_on_diffusion_model.pdf) 
 
 (확산 모델 기반 텍스트 정보를 이용한 이미지 생성 모델 연구)
 
