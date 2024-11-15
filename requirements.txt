@@ -1,0 +1,9 @@
+torchvision
+IPython
+diffusers
+transformers
+accelerate
+scipy
+opencv-python
+torchmetrics
+sewar
