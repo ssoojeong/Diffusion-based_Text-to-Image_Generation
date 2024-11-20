@@ -1,6 +1,8 @@
-# Diffusion-based_Text-to-Image_Generation
+# Diffusion-based Text-to-Image Generation
 
 ## &#x1F4E2; Project Overview: 2303~2306
+
+![Quantitative Results of MSCOCO 2014](./figure/１.png)
 
 ### 주요 기능
 - 텍스트 기반 이미지 생성 기능 제공
@@ -90,5 +92,4 @@ A study of text guided image generation based on diffusion model
 
 (확산 모델 기반 텍스트 정보를 이용한 이미지 생성 모델 연구)
 
-![Quantitative Results of MSCOCO 2014](./figure/１.png)
 ![Quantitative Results of MSCOCO 2014](./figure/２.png)
