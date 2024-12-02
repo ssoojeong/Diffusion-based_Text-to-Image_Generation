@@ -123,4 +123,7 @@ glide_model_cache/
 *.pt
 dist/
 
+data_gen/
+results/
+
 

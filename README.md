@@ -43,8 +43,9 @@
 conda create -n diffusion python=3.9
 conda activate diffusion
 
+cd ./Diffusion-based_Text-to-Image_Generation
+
 pip install -r requirements.txt
-pip install -e .
 ```
 > **Note**: GPU 사용 가능 환경에서 실행 권장
 

@@ -389,6 +389,7 @@ if __name__ == '__main__':
     
     import os 
     os.environ["CUDA_DEVICE_ORDER"]="PCI_BUS_ID"
+    os.makedirs('results', exist_ok=True)
     if args.gpus is not None:
         os.environ["CUsDA_VISIBLE_DEVICES"]=f"{args.gpus}"
     #device = torch.device(f"cuda:{args.gpus}") #무조건 cuda 만 쓰게끔
@@ -405,7 +406,7 @@ if __name__ == '__main__':
         for file in tqdm(files):
             img = cv2.imread(file)
             img = cv2.resize(img, (299, 299),interpolation=cv2.INTER_LINEAR)
-            img = np.cast[np.float32]((-128 + img) / 128.)  # 0~255 -> -1~1
+            img = np.asarray((img - 128) / 128, dtype=np.float32)  # 0~255 -> -1~1
             img = np.expand_dims(img, axis=0).transpose(0, 3, 1, 2)  # NHWC -> NCHW
             img_list.append(img)
         random.shuffle(img_list)
